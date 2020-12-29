@@ -4,8 +4,8 @@ apt update -qq
 apt install -y checkinstall build-essential
 rm /usr/local/bin/{lz4c,lz4cat,unlz4} 2>/dev/null
 cd $(mktemp -d)
-wget https://github.com/lz4/lz4/archive/v1.9.2.tar.gz -O lz4.tar.gz
-tar -xf lz4.tar.gz
+wget https://github.com/lz4/lz4/archive/v1.9.3.tar.gz
+tar -xf *.tar.gz
 cd lz4-*
 make
 echo y | checkinstall
